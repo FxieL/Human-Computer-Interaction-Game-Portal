@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head{
+    
+    background-color: rgb(241, 105, 81);
+    display: flex; 
+    position: relative;
+    justify-content: start;
+    align-items: center;
+ 
+    
+}
+
+.head img{
+    
+    width: 100px;
+    height: 100px;
+}
+
+#motto img{
+    width: 200px;
+    height: 50px;
+}
+
+#navigation{
+    color: white;
+
+   
+    background-color: rgb(209, 61, 61);
+    
+}
+
+
+#navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+#navigation>ul{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+#navigation>ul>li{
+    list-style: none;
+    position: relative;
+    flex: 1;
+}
+
+#navigation>ul>li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 5px;
+}
+
+#navigation>ul>li:hover{
+    background-color: violet;
+}
+
+/* Second Level Menu (Drop Down)*/
+
+#navigation>ul>li>ul{
+text-align: center;
+width: 100%;
+list-style: none;
+position: absolute;
+display: none;
+}
+
+#navigation>ul>li:hover>ul{
+    display: block;
+    background-color:#ff7a00 ;
+}
+
+#navigation>ul>li>ul>li:hover{
+    background-color: violet;
+    font-weight: bold;
+}
+
+
+.content{
+    background-color: rgb(241, 105, 81);
+}
+
+/* Moving Text */
+.Text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background-color: rgb(241, 105, 81);
+}
+
+.Text .unlocking{
+    font-size: 5vh;
+    font-weight: bold;
+    color: #7552b4;
+    border: 1px;
+}
+
+.Text .ae{
+    margin-left: 1vh;
+    height: 5vh;
+    line-height: 5vh;
+    overflow: hidden;
+    top: 0;
+}
+
+.ae li{
+    list-style: none;
+    font-size: 5vh;
+    font-weight: bold;
+    color: #1b1717;
+    position: relative;
+    top: 0;
+    animation: next 6s steps(4) infinite;
+}
+
+@keyframes next{
+    100%{
+        top: -20vh;
+    }
+}
+
+.ae li span{
+    position: relative;
+}
+
+.ae li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(241, 105, 81);
+    border-left: solid #1b1717;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -0.5vh 0 0.5vh;
+    }
+}
+
+/* Event Picture */
+.event{
+    background: url(./images/Events.png);
+    background-position: center;
+    background-size:cover;
+}
+
+.member{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vh 0 5vh 0;
+}
+
+.collab{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 200%;
+    padding-bottom: 2vh;
+}
+
+.learn-more{
+    display: flex;
+    justify-content: center;
+}
+
+.learn-more .btn{
+    background: #73328d;
+    border-radius: 2vh;
+    padding: 2vh 5vh;
+    margin-bottom: 2vh;
+    text-decoration: none;
+    color: #edeae6;
+}
+
+.learn-more .btn:hover{
+    background: #7552b4;
+}
+
+/* Aespa Event Detail */
+
+.detail img{
+    display: block;
+    align-items: center;
+    justify-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+h1{
+    padding: 2% 2% 0 1%;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    padding: 0.5% 0.5% 0.5% 1%;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    padding: 0.25% 0.5% 0.5% 1%;
+    color: white; 
+}
+
+p{
+    padding: 0 0.5% 0.5% 1%;
+    color: white;
+    text-align: start;
+    text-size-adjust: 5vh;
+}
+
+.Profile{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Footer */
+
+footer{
+
+    padding: 10px;
+    padding-right: 100%;
+    background-color: rgb(209, 61, 61);
+    display: flex;
+    justify-content: space-between;
+}
+
+#fright{
+    
+    width: 500px;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px){
+    #navigation>ul{
+        display: block;
+    }
+
+    #navigation>ul>li>ul{
+        position: relative;
+    }
+}

@@ -1,0 +1,127 @@
+<html>
+    
+    <head>
+        <title>Frawlsalla</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="FinalProjectHomeStyle.css">
+        <script src="script.js" defer></script>
+        <!-- Latest compiled and minified CSS -->
+        
+        <script
+        src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+
+    <div class="head"> 
+        <a href="FinalProjectHome.html"><img src="images\logo.png" alt=""></a>
+        <div id="motto"><a href="FinalProjectHome.html"><img src="images\motto.png" alt=""></a></div>
+        
+    </div>
+
+    <div id="navigation">
+        <ul>
+        <li><a href="FinalProjectHome.html" >Home</a></li>
+        
+        <li><div id="ss"><a href="#">Screenshots</a></div>
+            <ul>
+                <li><a href="lobby.html">Lobby</a></li>
+                <li><a href="gameplay.html">Gameplay</a></li>
+                <li><a href="moments.html">Moments</a></li>
+            </ul>
+        </li>
+    
+
+        <li><a href="event.html">Events</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="playnow.html">Play Now</a></li>
+    </ul> 
+ </div>
+    <!-- body -->
+
+    <div class="body" style="justify-content: center;">
+        <center>
+            <form action="" id="myForm">
+                <h2>Registration Form</h2>
+                <table>
+                    <!-- Name -->
+                    <tr>
+                    <td> Name </td>
+                    <td> 
+                        <input type="text" name="nameTxt" >
+                        </td>
+                    </tr>
+    
+                    <!-- Email  -->
+                    <tr>
+                        <td> Email </td>
+                        <td> 
+                            <input type="email" name="emailTxt">
+                        </td>
+                    </tr>
+    
+                    <!-- Password -->
+                    <tr>
+                        <td> Password </td>
+                        <td> 
+                            <input type="password" name="passwordTxt">
+                        </td>
+                    </tr>
+    
+                    <!-- Gender -->
+                    <tr>
+                        <td> Gender</td>
+                        <td> 
+                            <input type="radio" name="genderTxt" value="Male" id="male"> 
+                            <label for="male">Male</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> 
+                            <input type="radio" name="genderTxt" value="Female"> Female
+                        </td>
+                    </tr>
+
+                    
+                    <!-- Agree -->
+                    <tr>
+                        <td colspan="2"> 
+                            <input type="checkbox" name="agree" value="true" id="agree" > 
+                            <label for="agree">I agree to the terms and conditions </label>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td colspan="2">
+                            <p id="errorMessage"></p>
+                        </td>
+                    </tr>
+    
+                    <!-- Button -->
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit">
+                                Submit
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>   
+    </div>
+
+    <footer>
+        <div id="fright">
+            <div>JOIN OUR COMMUNITY</div>
+            <div class="sns"><a href="https://www.twitch.tv/brawlhalla"><img src="images\twitch.png" width="45px" height="45px"></a></div>
+            <div class="sns"><a href="https://twitter.com/Brawlhalla?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images\twitter.png" width="50px" height="50px"></a></div>
+            <div class="sns"><a href="https://www.youtube.com/channel/UCQ5k469r1kRZ10zvyxQsFCg"><img src="images\yt.png" width="40px" height="30px"></a></div>
+        </div>
+        
+    </footer>
+
+    </html>

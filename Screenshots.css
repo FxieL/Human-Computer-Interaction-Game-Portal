@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head{
+    
+    background-color: rgb(241, 105, 81);
+    display: flex; 
+    position: relative;
+    justify-content: start;
+    align-items: center;
+ 
+    
+}
+
+.head img{
+    
+    width: 100px;
+    height: 100px;
+}
+
+#motto img{
+    width: 200px;
+    height: 50px;
+}
+
+#navigation{
+    color: white;
+
+   
+    background-color: rgb(209, 61, 61);
+    
+}
+
+
+#navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+#navigation>ul{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+#navigation>ul>li{
+    list-style: none;
+    position: relative;
+    flex: 1;
+}
+
+#navigation>ul>li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 5px;
+}
+
+#navigation>ul>li:hover{
+    background-color: violet;
+}
+
+/* Second Level Menu (Drop Down)*/
+
+#navigation>ul>li>ul{
+text-align: center;
+width: 100%;
+list-style: none;
+position: absolute;
+display: none;
+}
+
+#navigation>ul>li:hover>ul{
+    display: block;
+    background-color:#ff7a00 ;
+}
+
+#navigation>ul>li>ul>li:hover{
+    background-color: violet;
+    font-weight: bold;
+}
+
+/* content */
+
+.content{
+    background-color: rgb(241, 105, 81);
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+}
+
+.content img{
+    width: 45%;
+}
+
+.content h1{
+    color: white;
+    font-size: 4vh;
+}
+
+.screenshots{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+
+.screenshots p{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    color: white;
+}
+
+.display img{
+    width: 75%;
+    padding-top: 1%;
+}
+
+.display p{
+    font-size: 3vh;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+/* Footer */
+
+footer{
+
+    padding: 10px;
+    padding-right: 100%;
+    background-color: rgb(209, 61, 61);
+    display: flex;
+    justify-content: space-between;
+}
+
+#fright{
+    
+    width: 500px;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px){
+    #navigation>ul{
+        display: block;
+    }
+
+    #navigation>ul>li>ul{
+        position: relative;
+    }
+}
